@@ -1,6 +1,7 @@
 FROM ros:humble-perception-jammy
 
 ARG USERNAME=USERNAME
+ARG WORKSPACE=WORKSPACE
 ARG USER_UID=1001
 ARG USER_GID=$USER_UID
 
@@ -20,15 +21,16 @@ RUN apt-get update && apt-get upgrade -y
 #     && apt-get install -y ros-humble-xacro \
 #     ros-humble-joint-state-publisher \
 #     ros-humble-joint-state-publisher-gui \
+#     ignition-fortress \
 #     ros-humble-ros-gz \
 #     ros-humble-ros2-control \
 #     ros-humble-ros2-controllers \
 #     ros-humble-robot-localization \
 #     ros-humble-navigation2 \
+#     ros-humble-nav2-bringup
 #     ros-humble-tf-transformations \
 #     ros-humble-moveit \
 #     ros-humble-ur \
-#     ignition-fortress \
 #     && rm -rf /var/lib/apt/lists/*
     
 # [OPTIONAL] Install Dynamixel dependencies 
@@ -40,6 +42,8 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get update \
     && apt-get install -y wget \
     python3-pip \
+    python3-rosdep \
+    python3-colcon-common-extensions \
     git \
     vim \
     net-tools \
@@ -60,5 +64,5 @@ SHELL ["/bin/bash", "-c"]
 
 # Add source statements to .bashrc so that both ROS and the workspace are automatically sourced when a bash shell is started
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
-RUN echo "source /workspaces/ros2_devcontainer_template/install/setup.bash" >> ~/.bashrc
+RUN echo "source ${WORKSPACE}/install/setup.bash" >> ~/.bashrc
 CMD ["/bin/bash"]
