@@ -1,0 +1,46 @@
+{
+    "name": "ROS2 Development Container",
+    "remoteUser": "ros",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "USERNAME": "ros",
+            "WORKSPACE": "${containerWorkspaceFolder}"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions":[
+				"althack.ament-task-provider",
+				"DotJoshJohnson.xml",
+				"ms-azuretools.vscode-docker",
+				"ms-iot.vscode-ros",
+				"ms-python.python",
+				"ms-vscode.cpptools",
+				"redhat.vscode-yaml",
+				"smilerobotics.urdf",
+				"twxs.cmake",
+				"yzhang.markdown-all-in-one",
+				"zachflower.uncrustify"
+            ]
+        }
+    },
+    "runArgs": [
+        "--privileged",
+        "--net=host",
+        "--cap-add=SYS_PTRACE",
+		"--security-opt=seccomp:unconfined",
+		"--security-opt=apparmor:unconfined",
+        "--ipc=host"
+    ],
+    "features": {
+        "ghcr.io/devcontainers/features/desktop-lite:1": {}
+    },
+    "forwardPorts": [6080],
+    "portsAttributes": {
+      "6080": {
+        "label": "desktop"
+      }
+    },
+    "postCreateCommand": "echo \"source /opt/ros/jazzy/setup.bash\" >> ~/.bashrc && echo \"source install/setup.bash\" >> ~/.bashrc"
+}
