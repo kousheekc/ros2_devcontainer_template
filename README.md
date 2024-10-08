@@ -25,15 +25,15 @@ You can easily create a new repository using this template:
 - Name your new repository.
 - Clone your new repository locally.
 
-![Use Template Button](./images/use_template.png) <!-- Add a screenshot showing where the 'Use Template' button is -->
-
 ### 2️⃣ Open in Dev Container
 
 After creating your repository:
 
 1. Open the repository folder in VSCode.
 2. VSCode will prompt you to **"Reopen in Container"**. Click this option. If it doesn’t, open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run: `Remote-Containers: Reopen in Container`.
-3. VSCode will automatically build the container and set up your development environment.
+3. VSCode will automatically build the container and set up your development environment with linting support and intellisense.
+
+<img src="./docs/media/intellisense.png" alt="VSCode Tasks" style="width:100%;">
 
 ### 3️⃣ Running VSCode Tasks
 
@@ -50,7 +50,7 @@ You can run these tasks by:
 2. Searching for `Tasks: Run Task`.
 3. Selecting the task you want to execute.
 
-![VSCode Tasks](./images/vscode_tasks.png) <!-- Add an image showing the available tasks in VSCode -->
+<img src="./docs/media/tasks_list.png" alt="VSCode Tasks" style="width:75%;">
 
 ### 4️⃣ GUI Access through noVNC
 
@@ -58,4 +58,9 @@ To access GUI applications like RViz or Gazebo:
 
 1. Ensure the container is running.
 2. Open your browser and navigate to `http://localhost:6080`.
-3. You will see the ROS2 GUI through noVNC! 
+3. You will see the ROS2 GUI through noVNC!
+
+<img src="./docs/media/rviz_gui.png" alt="VSCode Tasks" style="width:75%;">
+<img src="./docs/media/gazebo_gui.png" alt="VSCode Tasks" style="width:75%;">
+
+
