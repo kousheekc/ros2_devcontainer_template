@@ -60,7 +60,15 @@ To access GUI applications like RViz or Gazebo:
 2. Open your browser and navigate to `http://localhost:6080`.
 3. You will see the ROS2 GUI through noVNC!
 
-<img src="./docs/media/rviz_gui.png" alt="VSCode Tasks" style="width:75%;">
-<img src="./docs/media/gazebo_gui.png" alt="VSCode Tasks" style="width:75%;">
+<img src="./docs/media/rviz_gui.png" alt="VSCode Tasks" style="width:100%;">
+<img src="./docs/media/gazebo_gui.png" alt="VSCode Tasks" style="width:100%;">
+
+
+## ☎️ Contact
+Kousheek Chakraborty - kousheekc@gmail.com
+
+Project Link: [https://github.com/kousheekc/ros2_devcontainer_template.git](https://github.com/kousheekc/ros2_devcontainer_template.git)
+
+Hope this template saves you time and makes your ROS2 development more efficient. Feel free to reach out if you notice issues. Happy coding! 🚀
 
 
