@@ -57,7 +57,7 @@ You can run these tasks by:
 To access GUI applications like RViz or Gazebo:
 
 1. Ensure the container is running.
-2. Open your browser and navigate to `http://localhost:6080`.
+2. Open your browser and navigate to [http://localhost:6080](http://localhost:6080).
 3. You will see the ROS2 GUI through noVNC!
 
 <img src="./docs/media/rviz_gui.png" alt="VSCode Tasks" style="width:100%;">
