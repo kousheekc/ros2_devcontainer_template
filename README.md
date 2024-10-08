@@ -63,6 +63,13 @@ To access GUI applications like RViz or Gazebo:
 <img src="./docs/media/rviz_gui.png" alt="VSCode Tasks" style="width:100%;">
 <img src="./docs/media/gazebo_gui.png" alt="VSCode Tasks" style="width:100%;">
 
+### 🚧 Work in Progress
+
+- [ ] Simplified debugging using GDB.
+- [ ] Automated testing with GitHub Actions.
+- [ ] Support for multi-architecture builds (ARM, x86) in Docker.
+- [ ] Documentation generation from code comments.
+- [ ] Enhanced logging and monitoring capabilities for ROS2 nodes.
 
 ## ☎️ Contact
 Kousheek Chakraborty - kousheekc@gmail.com
