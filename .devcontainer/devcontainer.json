@@ -41,6 +41,5 @@
       "6080": {
         "label": "desktop"
       }
-    },
-    "postCreateCommand": "echo \"source /opt/ros/jazzy/setup.bash\" >> ~/.bashrc && echo \"source install/setup.bash\" >> ~/.bashrc"
+    }
 }
